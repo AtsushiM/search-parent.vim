@@ -1,6 +1,6 @@
 "AUTHOR:   Atsushi Mizoue <asionfb@gmail.com>
-"WEBSITE:  https://github.com/AtsushiM/auto-make.vim
-"VERSION:  0.9
+"WEBSITE:  https://github.com/AtsushiM/search-parent.vim
+"VERSION:  0.1
 "LICENSE:  MIT
 
 if exists("g:loaded_auto_make")
