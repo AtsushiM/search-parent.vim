@@ -41,11 +41,7 @@ function! searchparent#_Core(key, check)
     endwhile
 
     if i != g:search_parent_cdloop
-        let cwd = getcwd()
-        exec 'silent cd '.dir
-        let dir = getcwd()
-        exec 'silent cd '.cwd
-        return dir.'/'
+        return fnamemodify(dir.e, ":p")
     endif
     return ''
 endfunction
