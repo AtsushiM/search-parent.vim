@@ -41,7 +41,11 @@ function! searchparent#_Core(key, check)
     endwhile
 
     if i != g:search_parent_cdloop
-        return dir
+        let cwd = getcwd()
+        exec 'silent cd '.dir
+        let dir = getcwd()
+        exec 'silent cd '.cwd
+        return dir.'/'
     endif
     return ''
 endfunction
